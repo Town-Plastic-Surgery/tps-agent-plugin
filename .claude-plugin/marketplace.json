@@ -1,0 +1,12 @@
+{
+  "name": "tps",
+  "owner": { "name": "Town Plastic Surgery" },
+  "metadata": { "description": "Plugins for working with the TPS Agent." },
+  "plugins": [
+    {
+      "name": "tps-agent",
+      "source": "./plugins/tps-agent",
+      "description": "Connects Claude to the TPS Agent and teaches it to build binders and draft IDR packets in bulk."
+    }
+  ]
+}

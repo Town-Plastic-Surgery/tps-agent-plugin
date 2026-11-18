@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "tps-agent": {
+      "type": "http",
+      "url": "https://app.tps-agents.com/api/mcp"
+    }
+  }
+}
