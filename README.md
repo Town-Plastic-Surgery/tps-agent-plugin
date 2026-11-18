@@ -5,17 +5,39 @@ for building binders and drafting IDR packets in bulk.
 
 ## Install (Claude Code)
 
+One command, in a terminal:
+
 ```
-claude plugin marketplace add Town-Plastic-Surgery/tps-agent-plugin
-claude plugin install tps-agent@tps
+claude plugin install tps-agent --marketplace Town-Plastic-Surgery/tps-agent-plugin
 ```
 
-Then in Claude Code run `/plugin`, open Marketplaces, select `tps` and turn on auto-update,
-so new versions arrive at the next session start. Run `/mcp`, choose `tps-agent` and sign
-in with your TPS account.
+Then sign in once:
+
+```
+claude mcp login plugin:tps-agent:tps-agent
+```
+
+Your browser opens on TPS. Sign in with your TPS account and choose "Allow connection".
+There is nothing to copy or paste. If you skip this step, Claude Code reminds you at the
+start of each session until you are signed in. Inside Claude Code you can also run `/mcp`,
+choose `tps-agent` and authenticate.
 
 Use it by asking, for example, "start binders for 11/23 through 11/30", or run
-`/tps-agent:packets`.
+`/tps-agent:packets`. Through the connector you can do what your own TPS account can do in
+the app.
+
+Already have an older version? Update it, then restart Claude Code and sign in as above:
+
+```
+claude plugin marketplace update tps
+claude plugin update tps-agent
+```
+
+To get new versions automatically, run `/plugin` in Claude Code, open Marketplaces, select
+`tps` and turn on auto-update.
+
+To disconnect, open Settings in the TPS app, go to AI connections and disconnect Claude
+Code.
 
 ## Releasing
 

@@ -1,6 +1,8 @@
 {
   "name": "tps-agent",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Connects Claude to the TPS Agent and teaches it to build binders and draft IDR packets in bulk.",
-  "author": { "name": "Town Plastic Surgery" }
+  "author": {
+    "name": "Town Plastic Surgery"
+  }
 }
