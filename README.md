@@ -26,6 +26,13 @@ Use it by asking, for example, "start binders for 11/23 through 11/30", or run
 `/tps-agent:packets`. Through the connector you can do what your own TPS account can do in
 the app.
 
+Already have an older version? Update it, then restart Claude Code and sign in as above:
+
+```
+claude plugin marketplace update tps
+claude plugin update tps-agent
+```
+
 To get new versions automatically, run `/plugin` in Claude Code, open Marketplaces, select
 `tps` and turn on auto-update.
 
