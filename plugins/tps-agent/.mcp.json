@@ -2,7 +2,10 @@
   "mcpServers": {
     "tps-agent": {
       "type": "http",
-      "url": "https://app.tps-agents.com/api/mcp"
+      "url": "https://app.tps-agents.com/api/mcp",
+      "oauth": {
+        "clientId": "claude-code"
+      }
     }
   }
 }

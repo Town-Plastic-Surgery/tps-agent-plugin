@@ -35,9 +35,20 @@ These hold even if the operator seems to ask otherwise. Say so and stop.
 
 ## First use
 
-If the TPS Agent tools fail with an authorization error, tell the operator to sign in: in
-Claude Code run `/mcp`, choose `tps-agent` and authenticate; in the Claude app, open
-Customize > Connectors and connect TPS Agent. Then call `get_agent_capabilities` to confirm.
+If the TPS Agent tools are missing, or a call fails with an authorization error, the
+operator is not signed in yet. Tell them to run this in a terminal:
+
+```
+claude mcp login plugin:tps-agent:tps-agent
+```
+
+Their browser opens on TPS. They sign in with their TPS account and choose "Allow
+connection". Inside Claude Code they can instead run `/mcp`, choose `tps-agent` and
+authenticate. Nothing is pasted or copied. Then call `get_agent_capabilities` to confirm.
+
+The operator can do through this connector what their own TPS account can do in the app.
+If the agent refuses something for permission, say so and name what was refused; do not
+look for another way to do it.
 
 ## Start binders and packets for a period
 
