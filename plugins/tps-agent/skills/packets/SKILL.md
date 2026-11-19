@@ -106,6 +106,11 @@ short list of anything you could not find.
 - **When it finished with a question**, reply with `send_agent_message`: a new `requestId`,
   `parentAssistantMessageId` set to the assistant id from that finished turn, and the
   answer. Record the new turn id.
+- Never pass the operator a question the IDR Claims portal answers. The IDRE, the payer, the
+  stage, the due date and the documents on a line are read from IDR Claims, not asked. When
+  the agent asks one of these, or reports two records that disagree on one, steer it: "Read
+  it from the line in IDR Claims and use that. For the IDRE, the portal's value wins over
+  any other record." Do not count it as an open question.
 - Answer only from what the operator said in this conversation. Gather every other question
   across all chats and ask the operator once, as a numbered list with the DISP number on
   each. Never guess an answer to a money or evidence question. Photos and the FAIR Health
