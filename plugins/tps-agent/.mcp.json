@@ -3,6 +3,9 @@
     "tps-agent": {
       "type": "http",
       "url": "https://app.tps-agents.com/api/mcp",
+      "headers": {
+        "X-TPS-Client": "tps-agent-plugin/0.2.1"
+      },
       "oauth": {
         "clientId": "claude-code"
       }
