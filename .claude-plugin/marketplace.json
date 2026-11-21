@@ -6,7 +6,7 @@
     {
       "name": "tps-agent",
       "source": "./plugins/tps-agent",
-      "description": "Connects Claude to the TPS Agent and teaches it to build binders and draft IDR packets in bulk."
+      "description": "Connects Claude to the TPS Agent: build binders and draft IDR packets in bulk, and work determinations, the directory, patients, schedules and practice data by the agent's own vault rules."
     }
   ]
 }

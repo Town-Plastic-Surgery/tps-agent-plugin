@@ -16,7 +16,8 @@ packet. The connector has no IDR Claims, Symplast or browser tool. Ask the agent
 work in plain words.
 
 Packet rules (which historical EOB to use, how to write a section, what to include) live in
-the TPS Agent's own guidance, not here. To change one, use "Teach the agent a standing
+the TPS Agent's own guidance, not here. For work beyond packets (determinations, why one
+was lost, the directory, patients, schedules, practice numbers), use the `platform` skill. To change one, use "Teach the agent a standing
 rule" below.
 
 ## Hard stops
