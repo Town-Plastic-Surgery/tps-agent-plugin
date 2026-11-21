@@ -43,3 +43,10 @@ Code.
 
 Bump `version` in `plugins/tps-agent/.claude-plugin/plugin.json` on every change. Users
 receive nothing until the version changes.
+
+## Releasing a version
+
+Bump `version` in `plugins/tps-agent/.claude-plugin/plugin.json` and the `X-TPS-Client`
+header in `plugins/tps-agent/.mcp.json` together. TPS records the header on each
+connection and in PostHog (`tps_client_version` on `$mcp_tool_call`), which is how the team
+sees who is on which version.

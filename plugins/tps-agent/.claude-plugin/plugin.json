@@ -1,6 +1,6 @@
 {
   "name": "tps-agent",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Connects Claude to the TPS Agent: build binders and draft IDR packets in bulk, and work determinations, the directory, patients, schedules and practice data by the agent's own vault rules.",
   "author": {
     "name": "Town Plastic Surgery"
